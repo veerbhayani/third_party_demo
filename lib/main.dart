@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:third_party_demo/video_picker_demo.dart';
+import 'package:third_party_demo/shared_preference/counter_shared.dart';
+import 'package:third_party_demo/shared_preference/shared_preference_demo.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await CounterShared.init;
   runApp(
     const MyApp(),
   );
@@ -14,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: VideoPickerDemo(),
+      home: ShareDemo(),
     );
   }
 }
