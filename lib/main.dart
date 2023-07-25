@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:third_party_demo/multiple_image_selection_demo.dart';
+import 'package:third_party_demo/video_picker_demo.dart';
 
 void main() {
   runApp(
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MultipleImageSelectionDemo(),
+      home: VideoPickerDemo(),
     );
   }
 }
