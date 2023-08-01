@@ -14,6 +14,9 @@ class _AwesomeDialogDemoState extends State<AwesomeDialogDemo> {
     return Scaffold(
       body: Center(
         child: MaterialButton(
+          child: const Text(
+            'Press Here',
+          ),
           onPressed: () {
             AwesomeDialog(
               context: context,
@@ -27,9 +30,6 @@ class _AwesomeDialogDemoState extends State<AwesomeDialogDemo> {
                 20,
               ),
               showCloseIcon: true,
-              closeIcon: const Icon(
-                Icons.cancel_outlined,
-              ),
               headerAnimationLoop: false,
             ).show();
             setState(() {});
